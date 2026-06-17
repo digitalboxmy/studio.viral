@@ -1,39 +1,470 @@
-                        <a href="https://wa.me/60123456789?text=Salam%20Admin%20saya%20nak%20order%20Pakej%20Cuba%203%20Sachet%20Kopi%20Songkok" target="_blank" class="btn-order">ORDER SEKARANG VIA WA</a>
-                    </div>
-                </div>
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Panggung Al-Ambiak Original - Tenaga Luar Biasa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Modern Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
 
-                <!-- Package 2 (Featured Box Layout matching user's reference) -->
-                <div class="pricing-cell">
-                    <div class="price-card featured">
-                        <div class="popular-badge">Paling Berbaloi / Laris</div>
-                        <h3>Pek Penuh Kotak Hijau</h3>
-                        <p class="pack-info">1 Kotak Lengkap (20 Sachet)</p>
-                        <div class="price-num">RM 45.00<span> / Kotak</span></div>
-                        <ul class="benefit-list">
-                            <li>1 Kotak Penuh (20 Sachet)</li>
-                            <li>Sesuai bekalan sebulan</li>
-                            <li>Paling jimat & untung</li>
-                            <li>Free Consultation Penggunaan</li>
-                        </ul>
-                        <a href="https://wa.me/60123456789?text=Salam%20Admin%20saya%20nak%20order%201%20Kotak%2020%20Sachet%20Kopi%20Songkok%20Original" target="_blank" class="btn-order">ORDER 1 KOTAK SEKARANG</a>
-                    </div>
-                </div>
+        :root {
+            --bg-dark: #07140e;       /* Deep Luxury Emerald Black */
+            --bg-card: #0d2218;       /* Medium Emerald */
+            --primary-gold: #e5c158;  /* Premium Gold */
+            --accent-red: #d63031;    /* Warning/Urgency Red */
+            --text-light: #ffffff;
+            --text-gray: #a4b0be;
+            --whatsapp: #25d366;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Top Notification Bar (Scarcity & Urgency) */
+        .promo-bar {
+            background: linear-gradient(90deg, var(--accent-red), #b33939);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px; /* Dioptimumkan khas untuk paparan Telefon Bimbit */
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 40px 0 20px 0;
+        }
+
+        .hq-badge {
+            background: rgba(229, 193, 88, 0.1);
+            border: 1px solid var(--primary-gold);
+            color: var(--primary-gold);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .hero h1 span {
+            color: var(--primary-gold);
+            background: linear-gradient(to right, #f1c40f, #e5c158);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--text-gray);
+            font-size: 1rem;
+            margin-bottom: 25px;
+        }
+
+        /* Main Product Banner Image Placeholder */
+        .main-image-box {
+            background: #112e20;
+            border: 2px solid rgba(229, 193, 88, 0.2);
+            border-radius: 16px;
+            padding: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            text-align: center;
+            position: relative;
+        }
+
+        .main-image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
+
+        /* Jika tiada gambar lagi, box ini tunjuk text info */
+        .image-placeholder-text {
+            padding: 40px 20px;
+            color: var(--primary-gold);
+            font-weight: 700;
+            border: 2px dashed rgba(229, 193, 88, 0.4);
+            border-radius: 10px;
+        }
+
+        /* Slogan Tarikan */
+        .hook-box {
+            background: linear-gradient(135deg, var(--bg-card), #123324);
+            border-left: 4px solid var(--primary-gold);
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin-bottom: 35px;
+        }
+
+        .hook-box h3 {
+            font-size: 1.1rem;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .hook-box p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        /* Masalah Section (Empathy / Pain Points) */
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .section-title span {
+            color: var(--primary-gold);
+        }
+
+        .pain-list {
+            margin-bottom: 40px;
+        }
+
+        .pain-item {
+            background: #180a0a; /* Reddish black */
+            border: 1px solid #3a1515;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .pain-icon {
+            font-size: 1.5rem;
+        }
+
+        .pain-text {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #ff9f9f;
+        }
+
+        /* Khasiat/Manfaat Section (Solution) */
+        .benefit-box {
+            background: var(--bg-card);
+            border: 1px solid rgba(229, 193, 88, 0.1);
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+        }
+
+        .benefit-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .benefit-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .b-icon {
+            background: rgba(229, 193, 88, 0.1);
+            color: var(--primary-gold);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .b-text h4 {
+            font-size: 1.05rem;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .b-text p {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        /* Pricing Section (Offers) */
+        .pricing-area {
+            background: linear-gradient(180deg, var(--bg-dark), var(--bg-card));
+            padding: 30px 15px;
+            border-radius: 20px;
+            border: 2px solid var(--primary-gold);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .pricing-tag {
+            background: var(--primary-gold);
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 800;
+            padding: 4px 15px;
+            border-radius: 50px;
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-transform: uppercase;
+        }
+
+        .pack-title {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-top: 10px;
+        }
+
+        .pack-desc {
+            text-align: center;
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+
+        .price-display {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: var(--accent-red);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .new-price {
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1;
+            margin-top: 5px;
+        }
+
+        .new-price span {
+            font-size: 1rem;
+            color: var(--primary-gold);
+        }
+
+        /* Bullet Jualan */
+        .pack-features {
+            list-style: none;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        .pack-features li {
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pack-features li::before {
+            content: "✓";
+            color: var(--primary-gold);
+            font-weight: 900;
+        }
+
+        /* High-Converting CTA Button */
+        .cta-btn {
+            display: block;
+            background: linear-gradient(180deg, #2ecc71, var(--whatsapp));
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 18px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 25px rgba(37, 211, 102, 0.5);
+        }
+
+        .cta-subtext {
+            text-align: center;
+            color: var(--text-gray);
+            font-size: 0.8rem;
+            margin-top: 12px;
+        }
+
+        /* Fake Urgency / Stock Left */
+        .stock-counter {
+            background: rgba(214, 48, 49, 0.1);
+            border: 1px dashed var(--accent-red);
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            color: #ff7675;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-top: 25px;
+        }
+
+        /* Trust/Footer Badge */
+        .trust-footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #112e20;
+            margin-top: 40px;
+        }
+
+        .trust-footer p {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="promo-bar">
+        🔥 PROMOSI LELONGAN HQ: 50 KOTAK TERAKHIR SAHAJA HARI INI!
+    </div>
+
+    <div class="container">
+        
+        <section class="hero">
+            <div class="hq-badge">⭐ STOK 100% ORIGINAL HQ (KOTAK HIJAU)</div>
+            <h1>Kopi Panggung<br><span>Al-Ambiak</span></h1>
+            <p>Formulasi Ekstrak Herba Semulajadi Gred Premium Untuk Tenaga, Stamina Dan Kecergasan Maksimum Lelaki Sejati.</p>
+        </section>
+
+        <div class="main-image-box">
+            <img src="kopi.jpg" alt="Kopi Songkok Original" onerror="this.style.display='none'; document.getElementById('placeholder-text').style.display='block';">
+            <div id="placeholder-text" class="image-placeholder-text" style="display:none;">
+                📸 [GANTIKAN DENGAN GAMBAR KOPI SONGKOK KAU]
+                <br><span style="font-size:0.8rem; font-weight:normal; color:#fff;">(Letakkan nama fail imej 'kopi.jpg' dalam folder yang sama)</span>
             </div>
         </div>
 
-        <!-- Trust Guarantee Badge Container -->
-        <div class="guarantee-box">
-            <h4>Jaminan Kepuasan & Ketulenan Mutlak</h4>
-            <p>Hati-hati dengan harga murah yang tidak masuk akal di pasaran. Kami hanya membekalkan Kopi Songkok Al-Ambiak original terus dari rantaian pengeluaran rasmi dengan herba tulen gred terbaik.</p>
+        <div class="hook-box">
+            <h3>Rasa 'Kaw' Pekat, Penangan Padu!</h3>
+            <p>Gabungan mantap Tongkat Ali, Guarana, dan Maca yang membantu memulihkan kesegaran tubuh badan seawal satu sachet.</p>
         </div>
 
-    </div>
+        <section>
+            <h2 class="section-title">Selalu Alami Masalah <span>Ini?</span></h2>
+            <div class="pain-list">
+                <div class="pain-item">
+                    <span class="pain-icon">❌</span>
+                    <span class="pain-text">Badan lemau, lesu & tak bermaya lepas balik kerja</span>
+                </div>
+                <div class="pain-item">
+                    <span class="pain-icon">❌</span>
+                    <span class="pain-text">Mengantuk tersengguk-sengguk masa memandu jarak jauh</span>
+                </div>
+                <div class="pain-item">
+                    <span class="pain-icon">❌</span>
+                    <span class="pain-text">Sakit-sakit urat dan lenguh sendi satu badan</span>
+                </div>
+            </div>
+        </section>
 
-    <!-- Page Footer information -->
-    <footer>
-        <p>&copy; 2026 Pembekal Sah Kopi Songkok Al-Ambiak Malaysia. All Rights Reserved.</p>
-        <p style="margin-top: 5px; font-size: 0.75rem; color: #475a4e;">Disclaimer: Halaman web ini dibangunkan khas untuk kempen pengiklanan jualan runcit produk.</p>
-    </footer>
+        <section class="benefit-box">
+            <h2 class="section-title" style="margin-bottom: 30px;">Kenapa Anda <span>Wajib Cuba?</span></h2>
+            
+            <div class="benefit-item">
+                <div class="b-icon">1</div>
+                <div class="b-text">
+                    <h4>Tenaga Ekstra Serta-Merta</h4>
+                    <p>Membantu membekalkan stamina berpanjangan supaya kerja harian tak terganggu.</p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <div class="b-icon">2</div>
+                <div class="b-text">
+                    <h4>Melancarkan Aliran Darah</h4>
+                    <p>Herba semulajadi bertindak membantu menyegarkan otot dan membuang angin badan.</p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <div class="b-icon">3</div>
+                <div class="b-text">
+                    <h4>Rasa Kopi Kampung Sebenar</h4>
+                    <p>Tidak terlalu manis, aroma panggang asli yang membangkitkan selera penggemar kopi tegar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-area" id="order">
+            <div class="pricing-tag">Tawaran Paling Laris</div>
+            <h3 class="pack-title">Pek Penuh Kotak Hijau</h3>
+            <p class="pack-desc">Pilihan utama pelanggan setia untuk stok penggunaan sebulan</p>
+            
+            <div class="price-display">
+                <div class="old-price">NPS: RM 60.00</div>
+                <div class="new-price">RM 45.00 <span>/ 1 Kotak (20 Sachet)</span></div>
+            </div>
+
+            <ul class="pack-features">
+                <li>Kandungan: 20 Sachet Padu (20 Gram/sachet)</li>
+                <li>Jaminan 100% Original (Pek Tukaran Kotak Hijau Baharu)</li>
+                <li>Kesan pantas & bertenaga</li>
+                <li>Disediakan panduan cara minum yang betul</li>
+            </ul>
+
+            <a href="https://wa.me/60123456789?text=Salam%20Admin,%20saya%20nak%20order%201%20Kotak%20Kopi%20Songkok%20Original%20Promosi%20RM45" target="_blank" class="cta-btn">
+                🛒 Klik Untuk Order Serta-Merta
+            </a>
+            <p class="cta-subtext">🔒 Pembelian Selamat Terus Ke WhatsApp Admin</p>
+
+            <div class="stock-counter">
+                🔥 AMARAN: Tinggal 14 kotak sahaja lagi untuk harga promosi RM45!
+            </div>
+        </section>
+
+        <footer class="trust-footer">
+            <p>&copy; 2026 Pembekal Sah Kopi Panggung Al-Ambiak Malaysia.</p>
+            <p style="color: #475a4e; margin-top: 5px; font-size: 0.7rem;">Kami mementingkan kualiti produk dan kepuasan pelanggan. Pastikan yang original, baru beli.</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
