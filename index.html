@@ -1,266 +1,38 @@
-<!DOCTYPE html>
-<html lang="ms">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kopi Songkok - Warisan Utama, Rasa Sebenar</title>
-    <style>
-        /* Reset & Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+                        <a href="https://wa.me/60123456789?text=Salam%20Admin%20saya%20nak%20order%20Pakej%20Cuba%203%20Sachet%20Kopi%20Songkok" target="_blank" class="btn-order">ORDER SEKARANG VIA WA</a>
+                    </div>
+                </div>
 
-        body {
-            background-color: #1a1a1a;
-            color: #fff;
-            line-height: 1.6;
-        }
-
-        /* Navigation */
-        nav {
-            background-color: #0d0d0d;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #d4af37;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #d4af37;
-            letter-spacing: 1px;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #d4af37;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1974&auto=format&fit=crop') center/cover;
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 1rem;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            color: #d4af37;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 2rem;
-        }
-
-        .btn {
-            background-color: #d4af37;
-            color: #0d0d0d;
-            padding: 0.8rem 2rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background 0.3s, transform 0.2s;
-        }
-
-        .btn:hover {
-            background-color: #f3cf55;
-            transform: scale(1.05);
-        }
-
-        /* About Section */
-        .about {
-            padding: 5rem 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .about h2 {
-            color: #d4af37;
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        /* Products Section */
-        .products {
-            background-color: #111;
-            padding: 5rem 2rem;
-            text-align: center;
-        }
-
-        .products h2 {
-            color: #d4af37;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .product-card {
-            background-color: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 10px;
-            padding: 2rem;
-            transition: transform 0.3s, border-color 0.3s;
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-            border-color: #d4af37;
-        }
-
-        .product-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .product-card h3 {
-            color: #d4af37;
-            margin-bottom: 1rem;
-        }
-
-        .price {
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin: 1rem 0;
-            color: #fff;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 5rem 2rem;
-            text-align: center;
-        }
-
-        .contact h2 {
-            color: #d4af37;
-            margin-bottom: 1.5rem;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #0d0d0d;
-            text-align: center;
-            padding: 2rem;
-            font-size: 0.9rem;
-            border-top: 1px solid #222;
-            color: #777;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .nav-links { display: none; } /* Boleh ditambah hamburger menu jika perlu */
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">KOPI SONGKOK</div>
-        <ul class="nav-links">
-            <li><a href="#laman-utama">Utama</a></li>
-            <li><a href="#mengenai-kami">Mengenai Kami</a></li>
-            <li><a href="#produk">Produk</a></li>
-            <li><a href="#hubungi">Hubungi</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="laman-utama" class="hero">
-        <h1>Kopi Songkok</h1>
-        <p>Kenikmatan kopi sebenar yang membangkitkan aroma tradisi dan warisan asli. Setiap hirupan membawa semangat baru.</p>
-        <a href="#produk" class="btn">Beli Sekarang</a>
-    </section>
-
-    <!-- About Section -->
-    <section id="mengenai-kami" class="about">
-        <h2>Warisan Dalam Setiap Cawan</h2>
-        <p>Kopi Songkok dihasilkan daripada biji kopi pilihan berkualiti tinggi yang dipanggang dengan teliti mengikut resipi turun-temurun. Kami mengekalkan keaslian rasa kopi kampung yang kaw, pekat, dan memikat selera untuk memastikan anda mendapat tenaga ekstra sepanjang hari.</p>
-    </section>
-
-    <!-- Products Section -->
-    <section id="produk" class="products">
-        <h2>Koleksi Produk Kami</h2>
-        <div class="product-grid">
-            <!-- Produk 1 -->
-            <div class="product-card">
-                <div class="product-icon">☕</div>
-                <h3>Kopi Songkok Klasik</h3>
-                <p>Kopi hitam premium dengan rasa asli yang kuat dan aroma memikat. Sesuai untuk peminat kopi tegar.</p>
-                <div class="price">RM 15.00</div>
-                <a href="#hubungi" class="btn">Tempah</a>
-            </div>
-
-            <!-- Produk 2 -->
-            <div class="product-card">
-                <div class="product-icon">🥛</div>
-                <h3>Kopi Songkok 3-in-1</h3>
-                <p>Gabungan mantap kopi, krimer, dan gula secukup rasa. Cepat, mudah, dan tetap 'kaw'.</p>
-                <div class="price">RM 18.00</div>
-                <a href="#hubungi" class="btn">Tempah</a>
-            </div>
-
-            <!-- Produk 3 -->
-            <div class="product-card">
-                <div class="product-icon">🌱</div>
-                <h3>Kopi Songkok Tanpa Gula</h3>
-                <p>Ekstrak kopi tulen bagi mereka yang mementingkan kesihatan tanpa mengorbankan rasa kopi sebenar.</p>
-                <div class="price">RM 16.00</div>
-                <a href="#hubungi" class="btn">Tempah</a>
+                <!-- Package 2 (Featured Box Layout matching user's reference) -->
+                <div class="pricing-cell">
+                    <div class="price-card featured">
+                        <div class="popular-badge">Paling Berbaloi / Laris</div>
+                        <h3>Pek Penuh Kotak Hijau</h3>
+                        <p class="pack-info">1 Kotak Lengkap (20 Sachet)</p>
+                        <div class="price-num">RM 45.00<span> / Kotak</span></div>
+                        <ul class="benefit-list">
+                            <li>1 Kotak Penuh (20 Sachet)</li>
+                            <li>Sesuai bekalan sebulan</li>
+                            <li>Paling jimat & untung</li>
+                            <li>Free Consultation Penggunaan</li>
+                        </ul>
+                        <a href="https://wa.me/60123456789?text=Salam%20Admin%20saya%20nak%20order%201%20Kotak%2020%20Sachet%20Kopi%20Songkok%20Original" target="_blank" class="btn-order">ORDER 1 KOTAK SEKARANG</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="hubungi" class="contact">
-        <h2>Berminat Untuk Tempahan?</h2>
-        <p style="margin-bottom: 2rem;">Hubungi kami sekarang untuk pembelian runcit atau borong.</p>
-        <!-- Anda boleh tukar nombor telefon di bawah untuk pautan WhatsApp automatik -->
-        <a href="https://wa.me/60123456789?text=Saya%20berminat%20nak%20beli%20Kopi%20Songkok" target="_blank" class="btn">Hubungi Lewat WhatsApp</a>
-    </section>
+        <!-- Trust Guarantee Badge Container -->
+        <div class="guarantee-box">
+            <h4>Jaminan Kepuasan & Ketulenan Mutlak</h4>
+            <p>Hati-hati dengan harga murah yang tidak masuk akal di pasaran. Kami hanya membekalkan Kopi Songkok Al-Ambiak original terus dari rantaian pengeluaran rasmi dengan herba tulen gred terbaik.</p>
+        </div>
 
-    <!-- Footer -->
+    </div>
+
+    <!-- Page Footer information -->
     <footer>
-        <p>&copy; 2026 Kopi Songkok Malaysia. Hak Cipta Terpelihara.</p>
+        <p>&copy; 2026 Pembekal Sah Kopi Songkok Al-Ambiak Malaysia. All Rights Reserved.</p>
+        <p style="margin-top: 5px; font-size: 0.75rem; color: #475a4e;">Disclaimer: Halaman web ini dibangunkan khas untuk kempen pengiklanan jualan runcit produk.</p>
     </footer>
 
 </body>
